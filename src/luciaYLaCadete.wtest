@@ -1,0 +1,15 @@
+import remiseras.*
+import clientes.*
+
+test "Lucía reemplaza a Mariela y luego a Gabriela. Melina trabaja para Ludmila" {
+
+	lucia.companeraReemplazada(mariela)
+	melina.clientaParaLaQueTrabajaAhora(ludmila)
+	assert.equals(150, lucia.precioViaje(melina,10))
+	assert.equals(50, lucia.precioViaje(melina,1))
+	
+	lucia.companeraReemplazada(gabriela)
+	assert.equals(180, lucia.precioViaje(melina,10))
+	assert.equals(18, lucia.precioViaje(melina,1))
+
+}
