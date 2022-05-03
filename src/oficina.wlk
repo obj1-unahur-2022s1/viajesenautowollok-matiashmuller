@@ -1,3 +1,6 @@
+/*
+ * Oficina: Muy bien
+ */
 import remiseras.*
 import clientes.*
 
@@ -22,10 +25,8 @@ object oficina {
 	}
 	
 	method intercambiarRemiseras() {
-		const primeraOpcionAnterior = primeraOpcion
-		
-		self.cambiarPrimeraRemiseraPor(segundaOpcion)
-		self.cambiarSegundaRemiseraPor(primeraOpcionAnterior)
+		/*Otra opcion más fácil era llamando a asignarRemiseras */
+		self.asignarRemiseras(segundaOpcion, primeraOpcion)
 	}
 	
 	method segundaRemiseraEsMasBarata(cliente,kms) {
@@ -34,6 +35,7 @@ object oficina {
 	}
 	
 	method remiseraElegidaParaViaje(cliente, kms) {
+		/*Muy bien delegando el caculo en un métdo independiente */
 		if(self.segundaRemiseraEsMasBarata(cliente,kms)) {
 			return self.segundaOpcion()
 		} else {

@@ -1,8 +1,10 @@
+/*
+ * Muy Bien
+ */
 object ludmila {
 	
-	method precioPorKm() {
-		return 18
-	}
+	/*Te dejo otra forma de hacerlo directamente con el = y sin return */
+	method precioPorKm() = 18
 }
 
 object anaMaria {
@@ -14,13 +16,10 @@ object anaMaria {
 		estaEconomicamenteEstable = valor
 	}
 	
-	method precioPorKm() {
-		if (estaEconomicamenteEstable) {
-			return 30
-		} else {
-			return 25
-		}
-	}
+	/*  
+	 * Te dejo otra forma de hacerlo con el =
+	*/
+	method precioPorKm()= if (estaEconomicamenteEstable) {30}else{25}
 }
 
 
