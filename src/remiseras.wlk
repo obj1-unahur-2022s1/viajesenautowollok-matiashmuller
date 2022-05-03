@@ -1,3 +1,6 @@
+/*
+ * Muy Bien
+ */
 import clientes.*
 
 
@@ -16,7 +19,7 @@ object gabriela {
 }
 
 object mariela {
-	
+	/*Muy bien utilizado el max() */
 	method precioViaje(cliente, kms) {
 		return 50.max(cliente.precioPorKm() * kms)
 	}
@@ -43,6 +46,7 @@ object lucia {
 	}
 	
 	method precioViaje(cliente, kms) {
+		/*También podes acceder directamente a la variable */
 		return self.companeraReemplazada().precioViaje(cliente, kms)
 	}
 }

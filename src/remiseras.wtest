@@ -1,5 +1,9 @@
 import remiseras.*
 import clientes.*
+/*
+ * Quizás es mas conveniente tener los test agrupados por objetos, 
+ * Digo, hacer test independientes para roxana, independientes para gabriela, etc 
+ */
 
 test "Cobro por viaje de 10 km" {
 

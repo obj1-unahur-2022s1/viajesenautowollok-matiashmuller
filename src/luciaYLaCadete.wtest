@@ -1,5 +1,9 @@
 import remiseras.*
 import clientes.*
+/*
+ *  Quizás es mas conveniente tener los test agrupados por objetos,
+ * Un test para lucia y un test para melina
+ */
 
 test "Lucía reemplaza a Mariela y luego a Gabriela. Melina trabaja para Ludmila" {
 
